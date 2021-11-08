@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  따로 명시 안해놓으면 GET방식..!  -->
+    AccountController = Controller
+    {
+        Login(){
+            retrun View();
+        }
+
+        Register(user model) {
+            
+            if(ModelState.IsValid){ 
+                using (var db = new AspnetNoteDbcontext()){
+                    db.Users.Add(model);
+                    db.SaveChanges(); //실제 sql에 저장하기 위해서 
+                }
+                return RedirectToAction("index","Home");
+            }
+            return View();
+        }
+    }
+</body>
+</html>

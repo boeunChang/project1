@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table span</title>
+    <style>
+        table,th,td{
+            border: 1px solid blueviolet;
+            border-collapse: collapse;
+            text-align: center;
+            width: 280px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cell that span two columns</h2>
+    <p>To make a cell span more than on column, use the colspan attribure.</p>
+    <table>
+        <tr>
+            <th colspan="2">name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Joel</td>
+            <td>Smith</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Michael</td>
+            <td>Jackson</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <p></p>
+
+        <h2>Cell span two rows</h2>
+        <table>
+            <tr>
+                <th rowspan="2">bogo</th>
+                <th>kindof</th>
+                <th>age</th>
+                <th>weight</th>
+            </tr>
+            <tr>
+                <td>shiba</td>
+                <td>2</td>
+                <td>11.8</td>
+            </tr>
+    </table>
+    <p></p>
+    <table>
+        <thead>
+            <tr>
+                <th>title1</th>
+                <th>title2</th>
+                <th>title3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sub1</td>
+                <td>sub2</td>
+                <td>sub3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer1</td>
+                <td>footer2</td>
+                <td>footer3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

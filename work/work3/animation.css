@@ -1,0 +1,17 @@
+/* 상자를 만들고 이동을 시키고 이동에 따라 색을 입혀야해 (이동은 3번 돌리자) */
+.translate{
+    /* 이동에 대한 설명을 쓰세요 ( 기준점 -> 오른쪽 -> 아래로 -> 왼쪽으로 -> 다시 원점*/
+}
+/* animation-diraction 애니매이션 진행 방향 설정 -> 이것도 사용해야하나? */
+
+.transition-property {
+    /* 색상을 변경할거에요. (빨강 -> 파랑 -> 초록 -> 노랑)*/
+}
+
+.animation-timingfunction {
+    /* linear : 등속 */
+}
+
+.animation-iteration-count{
+    /*애니메이션 반복 횟수 설정 -> 세번할건데, c3;  참고로 무한 반복은  infinite*/
+}

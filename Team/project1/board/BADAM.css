@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: auto; 
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url('./beach.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-box {
+    width: 200px; height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    color: steelblue;
+}
+
+.logo > b {
+    font-size: 50px;
+    /* font-family:'Times New Roman', Times, serif; */
+    color: rgb(39, 105, 131); 
+}
+
+.head-line {
+    width: 500px; height: 150px;
+    position: absolute;
+    left: 60%;
+    top: 50px;
+    color: rgb(33, 44, 68);
+}
+
+main {
+    min-height: 700px; 
+}
+
+#main-container {
+    width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 350px 710px;
+    grid-template-rows: 300px; 
+    gap: 10px;
+}
+
+.pic-box1 {
+    margin-top: 35px;
+    
+}
+
+.pic-box2 {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+article { 
+    display: block;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+}
+
+article > h1 {
+    font-family: normal;
+}
+article > a > b {
+    font-family: normal;
+}
+
+footer {
+    height: 20px;
+    margin: auto;
+    width: 1080px; height: 40px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.link-text {    
+     
+    text-align: center;
+}
+
+/* recipe.html */
+
+#main-recicontainer {
+    width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(5, 200px) 300px;
+    gap: 30px;
+}
+
+.head-line2 {
+    text-align: center;
+}
+
+.recipe1 {
+    display: flex; 
+    margin-right: 150px; 
+}
+
+.explain {
+    display: flex;
+    margin-right: 180px;
+    margin-left: 150px;
+    font-size: 17px;
+    line-height: 1.5;
+}

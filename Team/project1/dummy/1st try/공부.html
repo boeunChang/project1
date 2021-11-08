@@ -1,0 +1,40 @@
+<!-- 로그인 -> 사용자 정보를 입력 -> 사용자 정보를 보유-->
+
+<!--
+Sprign Security
+
+ASP.NET Identity(Security)
+- 사용자 로그인(인증)
+- 사용자 Role(Admin, User, PowerUser)
+- SNS 인증, E-mail인증
+
+Session을 이용한 로그인, 회원가입
+
+
+로그인 2가지 방법론
+#1. Session
+- 웹 서버가 사용자 정보를 메모리 담아놓고  
+-> 보안성이 높다. (장점)
+-> 웹 서버 메모리 부하가 높아진다. 
+
+#2. Cookie
+- 웹 서버 로그인 -> 사용자 정보 -> 브라우저 전달
+-> 쿠키 ㅋㅋㅋㅋㅋㅋㅋㅇ홓오오옹오
+-> 웹 서버의 부하가 낮아진다
+-> 보안성이 낮음..
+
+# 결론 : Cookie
+- Cookie -> 암호화 -> 복호화     / 위변조의 위험
+- SSL
+
+SSL -> 유료(인증서 구매후 사용), 무료(open SSL)
+    -> 100만원, 20만원
+
+
+
+
+        AccountController
+
+Get : DB -> 받는다
+http://www.example.com/api/GetBook
+겟 방식

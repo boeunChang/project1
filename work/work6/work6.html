@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaseballGame</title>
+    <link rel="stylesheet" href="./work6.css" type="text/css">
+</head>
+<body>
+    <h1>BaseallGame</h1>
+    <div id= result></div>
+    <input placeholder="Input">
+    <button>button</button> <!--내용을 보내서..컴퓨터가 인식하게끔-->
+    <script>
+        const input = document.querySelector("#input");
+        const form = document.querySelector("#form");
+        const logs = document.querySelector("#logs");
+
+        const numbers = []; // 9개의 정수
+        for (let n = 0; n < 9 ; n++) {  // 9번 반복
+            numbers.push(n+1);
+        }
+
+        const answer = [] // 정답
+        for (let n = 0; n < 3 ; n++) {  // 3번 반복
+            const index = Math.floor(Math.random()*numbers.length); //[0~9]에서 하나 뽑음
+            answer.push(number[index]);
+            number.splice(index,1);
+            console.log(answer.join(''));
+        }
+
+        const tries = [];
+        function checkInput(input){
+            if (input.length !== 3) {
+                return alert('3 자리 숫자로 입력해 주세요');                )
+            }
+            if (new Set(input).size !== 3) {   // 중복된 숫자가 있는가 알아서 배열을 제거해주는 배열이 new set() length
+
+            }
+            if (tries.includes(input)){
+                return alert('이미 시도한 값입니다.')
+            }
+            return true;
+        }
+        // 경우의 수
+        // 1. arr[0] != arr1[0] && arr[1] != arr1[1] && arr[2] != arr1[2]
+        //         => "Home run" 처리 후 새로운 문제
+
+        // 2. arr[0] == arr1[0] && arr[1] != arr1[1] && arr[2] != arr[2]
+        //         => "1 Strike "
+        // 3. arr[0] != arr1[0] && arr[1] == arr1[1] && arr[2] != arr[2]
+        //         => "1 Strike "
+        // 4. arr[0] != arr1[0] && arr[1] != arr1[1] && arr[2] == arr[2]
+        //         => "1 Strike "
+        
+        
+        // 5. arr[0] == arr1[0] && arr[1] == arr1[1] && arr[2] != arr[2]
+        //         => "2 Strike "
+        // 6. arr[0] != arr1[0] && arr[1] == arr1[1] && arr[2] == arr[2]
+        //         => "2 Strike "
+        // 7. arr[0] == arr1[0] && arr[1] != arr1[1] && arr[2] == arr[2]
+        //         => "2 Strike "
+
+
+        // 8. arr[0] == arr1[0] && arr[1] == arr1[1] && arr[2] == arr1[2]
+        //         => "3  strike Home run" 처리 후 새로운 문제
+
+
+        // function baseball() {
+        // // 변수 선언
+        // let randonNum = Math.floor(Math.random() *999); //컴퓨터가 만든 난수
+        // let playerNum = document.getElementById('playNumber').value; // 플레이어가 입력한 수
+
+        // let randomArr = [];
+        // let playerArr = [];
+        
+        // 스트라이크를 확인하는 수식
+
+        // 볼을 확인하는 수식
+
+        // 홈런을 확인하는 수식
+            // 홈런처리 후 리셋!!!!!!!!
+        // 화면에 출력
+        // document.getElementById("result").innerHTML = strike + "스트라이크" + ball + "볼"
+            
+
+    }
+    //document.getElementById("result").innerHTML = Math.floor(Math.random()*9 +1);
+
+    </script>
+</body>
+</html>
